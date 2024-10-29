@@ -18,45 +18,52 @@ class EventsCategoryOthers {
 // Define the list of News Category Others
 final List<EventsCategoryOthers> eventsCategoryOthers = [
   EventsCategoryOthers(
-    title: "ইন্সটিটিউট of Science",
+    title: "Computer Science and Engineering",
     imagePath: Images.directoryIc,
     onTap: () {
-      Get.to(() => const EventsCategoryOthersScreen(title: "ইন্সটিটিউট of Science"));
+      Get.to(() => const EventsCategoryOthersScreen(title: "Computer Science and Engineering"));
     },
   ),
   EventsCategoryOthers(
-    title: "ইন্সটিটিউট of Engineering",
+    title: "Electrical and Electronic Engineering",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const EventsCategoryOthersScreen(title: "ইন্সটিটিউট of Engineering"));
+      Get.to(() => const EventsCategoryOthersScreen(title: "Electrical and Electronic Engineering"));
     },
   ),
   EventsCategoryOthers(
-    title: "ইন্সটিটিউট of Business Studies",
+    title: "Mathematics",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const EventsCategoryOthersScreen(title: "ইন্সটিটিউট of Business Studies"));
+      Get.to(() => const EventsCategoryOthersScreen(title: "Mathematics"));
     },
   ),
   EventsCategoryOthers(
-    title: "ইন্সটিটিউট of Social Science",
+    title: "Fisheries",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const EventsCategoryOthersScreen(title: "ইন্সটিটিউট of Social Science"));
+      Get.to(() => const EventsCategoryOthersScreen(title: "Fisheries"));
     },
   ),
   EventsCategoryOthers(
-    title: "ইন্সটিটিউট of Agriculture and Life Science",
+    title: "Geology",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const EventsCategoryOthersScreen(title: "ইন্সটিটিউট of Agriculture and Life Science"));
+      Get.to(() => const EventsCategoryOthersScreen(title: "Geology"));
     },
   ),
   EventsCategoryOthers(
-    title: "ইন্সটিটিউট of Earth Science",
+    title: "Management",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const EventsCategoryOthersScreen(title: "ইন্সটিটিউট of Earth Science"));
+      Get.to(() => const EventsCategoryOthersScreen(title: "Management"));
+    },
+  ),
+  EventsCategoryOthers(
+    title: "Social Work",
+    imagePath: Images.calendarIc,
+    onTap: () {
+      Get.to(() => const EventsCategoryOthersScreen(title: "Social Work"));
     },
   ),
 ];

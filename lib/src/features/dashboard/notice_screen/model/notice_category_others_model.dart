@@ -18,45 +18,52 @@ class NoticeCategoryOthers {
 // Define the list of Notice Category Others
 final List<NoticeCategoryOthers> noticeCategoryOthers = [
   NoticeCategoryOthers(
-    title: "ইন্সটিটিউট of Science",
+    title: "Computer Science and Engineering",
     imagePath: Images.directoryIc,
     onTap: () {
-      Get.to(() => const NoticeCategoryOthersScreen(title: "ইন্সটিটিউট of Science"));
+      Get.to(() => const NoticeCategoryOthersScreen(title: "Computer Science and Engineering"));
     },
   ),
   NoticeCategoryOthers(
-    title: "ইন্সটিটিউট of Engineering",
+    title: "Electrical and Electronic Engineering",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const NoticeCategoryOthersScreen(title: "ইন্সটিটিউট of Engineering"));
+      Get.to(() => const NoticeCategoryOthersScreen(title: "Electrical and Electronic Engineering"));
     },
   ),
   NoticeCategoryOthers(
-    title: "ইন্সটিটিউট of Business Studies",
+    title: "Mathematics",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const NoticeCategoryOthersScreen(title: "ইন্সটিটিউট of Business Studies"));
+      Get.to(() => const NoticeCategoryOthersScreen(title: "Mathematics"));
     },
   ),
   NoticeCategoryOthers(
-    title: "ইন্সটিটিউট of Social Science",
+    title: "Fisheries",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const NoticeCategoryOthersScreen(title: "ইন্সটিটিউট of Social Science"));
+      Get.to(() => const NoticeCategoryOthersScreen(title: "Fisheries"));
     },
   ),
   NoticeCategoryOthers(
-    title: "ইন্সটিটিউট of Agriculture and Life Science",
+    title: "Geology",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const NoticeCategoryOthersScreen(title: "ইন্সটিটিউট of Agriculture and Life Science"));
+      Get.to(() => const NoticeCategoryOthersScreen(title: "Geology"));
     },
   ),
   NoticeCategoryOthers(
-    title: "ইন্সটিটিউট of Earth Science",
+    title: "Management",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const NoticeCategoryOthersScreen(title: "ইন্সটিটিউট of Earth Science"));
+      Get.to(() => const NoticeCategoryOthersScreen(title: "Management"));
+    },
+  ),
+  NoticeCategoryOthers(
+    title: "Social Work",
+    imagePath: Images.calendarIc,
+    onTap: () {
+      Get.to(() => const NoticeCategoryOthersScreen(title: "Social Work"));
     },
   ),
 ];

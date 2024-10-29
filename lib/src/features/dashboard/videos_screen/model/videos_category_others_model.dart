@@ -18,45 +18,52 @@ class VideosCategoryOthers {
 // Define the list of Videos Category Others
 final List<VideosCategoryOthers> videosCategoryOthers = [
   VideosCategoryOthers(
-    title: "ইন্সটিটিউট of Science",
+    title: "Computer Science and Engineering",
     imagePath: Images.directoryIc,
     onTap: () {
-      Get.to(() => const VideosCategoryOthersScreen(title: "ইন্সটিটিউট of Science"));
+      Get.to(() => const VideosCategoryOthersScreen(title: "Computer Science and Engineering"));
     },
   ),
   VideosCategoryOthers(
-    title: "ইন্সটিটিউট of Engineering",
+    title: "Electrical and Electronic Engineering",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const VideosCategoryOthersScreen(title: "ইন্সটিটিউট of Engineering"));
+      Get.to(() => const VideosCategoryOthersScreen(title: "Electrical and Electronic Engineering"));
     },
   ),
   VideosCategoryOthers(
-    title: "ইন্সটিটিউট of Business Studies",
+    title: "Mathematics",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const VideosCategoryOthersScreen(title: "ইন্সটিটিউট of Business Studies"));
+      Get.to(() => const VideosCategoryOthersScreen(title: "Mathematics"));
     },
   ),
   VideosCategoryOthers(
-    title: "ইন্সটিটিউট of Social Science",
+    title: "Fisheries",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const VideosCategoryOthersScreen(title: "ইন্সটিটিউট of Social Science"));
+      Get.to(() => const VideosCategoryOthersScreen(title: "Fisheries"));
     },
   ),
   VideosCategoryOthers(
-    title: "ইন্সটিটিউট of Agriculture and Life Science",
+    title: "Geology",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const VideosCategoryOthersScreen(title: "ইন্সটিটিউট of Agriculture and Life Science"));
+      Get.to(() => const VideosCategoryOthersScreen(title: "Geology"));
     },
   ),
   VideosCategoryOthers(
-    title: "ইন্সটিটিউট of Earth Science",
+    title: "Management",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const VideosCategoryOthersScreen(title: "ইন্সটিটিউট of Earth Science"));
+      Get.to(() => const VideosCategoryOthersScreen(title: "Management"));
+    },
+  ),
+  VideosCategoryOthers(
+    title: "Social Work",
+    imagePath: Images.calendarIc,
+    onTap: () {
+      Get.to(() => const VideosCategoryOthersScreen(title: "Social Work"));
     },
   ),
 ];

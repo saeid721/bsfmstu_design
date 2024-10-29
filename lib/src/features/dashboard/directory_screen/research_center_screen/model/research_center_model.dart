@@ -18,28 +18,28 @@ class ResearchCenterCategory {
 // Define the list of Research Center Category
 final List<ResearchCenterCategory> researchCenterCategory = [
   ResearchCenterCategory(
-    title: "ইন্সটিটিউট of Science",
+    title: "Science",
     imagePath: Images.directoryIc,
     onTap: () {
       Get.to(() => const ResearchCenterDetailsMenuScreen());
     },
   ),
   ResearchCenterCategory(
-    title: "ইন্সটিটিউট of Engineering",
+    title: "Engineering",
     imagePath: Images.calendarIc,
     onTap: () {
       Get.to(() => const ResearchCenterDetailsMenuScreen());
     },
   ),
   ResearchCenterCategory(
-    title: "ইন্সটিটিউট of Business Studies",
+    title: "Business Studies",
     imagePath: Images.calendarIc,
     onTap: () {
       Get.to(() => const ResearchCenterDetailsMenuScreen());
     },
   ),
   ResearchCenterCategory(
-    title: "ইন্সটিটিউট of Social Science",
+    title: "Social Science",
     imagePath: Images.calendarIc,
     onTap: () {
       Get.to(() => const ResearchCenterDetailsMenuScreen());

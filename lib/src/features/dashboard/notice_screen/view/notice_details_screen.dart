@@ -9,7 +9,15 @@ import '../../dashboard/view/dashboard_screen.dart';
 import 'components/notice_details_widget.dart';
 
 class NoticeDetailsScreen extends StatefulWidget {
-  const NoticeDetailsScreen({super.key});
+  final String date;
+  final String title;
+  final String details;
+  const NoticeDetailsScreen({
+    super.key,
+    required this.date,
+    required this.title,
+    required this.details,
+  });
 
   @override
   State<NoticeDetailsScreen> createState() => _NoticeDetailsScreenState();
@@ -63,9 +71,14 @@ class _NoticeDetailsScreenState extends State<NoticeDetailsScreen> {
         width: size(context).width,
         color: Colors.white,
         padding: const EdgeInsets.all(10),
-        child: const SingleChildScrollView(
+        child: SingleChildScrollView(
           child: Column(
             children: [
+              // NoticeDetailsWidget(
+              //   title: widget.title,
+              //   details: widget.details,
+              //   date: widget.date,
+              // ),
               NoticeDetailsWidget(
                 title: "উদ্ভাবনী প্রদর্শনীতে অংশগ্রহনের নোটিশ, সকল শিক্ষার্থীদের জন্য।",
                 text: """আবেদনের যোগ্যতা ও অভিজ্ঞতা
@@ -96,7 +109,7 @@ class _NoticeDetailsScreenState extends State<NoticeDetailsScreen> {
 (সৈয়দ ফারুক হোসেন) রেজিস্ট্রার
 বঙ্গমাতা শেখ ফজিলাতুন্নেছা মুজিব বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়
 """,
-                date: '10/10/2024',
+                date: widget.date,
               ),
             ],
           ),

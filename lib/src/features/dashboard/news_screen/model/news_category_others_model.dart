@@ -18,45 +18,52 @@ class NewsCategoryOthers {
 // Define the list of News Category Others
 final List<NewsCategoryOthers> newsCategoryOthers = [
   NewsCategoryOthers(
-    title: "ইন্সটিটিউট of Science",
+    title: "Computer Science and Engineering",
     imagePath: Images.directoryIc,
     onTap: () {
-      Get.to(() => const NewsCategoryOthersScreen(title: "ইন্সটিটিউট of Science"));
+      Get.to(() => const NewsCategoryOthersScreen(title: "Computer Science and Engineering"));
     },
   ),
   NewsCategoryOthers(
-    title: "ইন্সটিটিউট of Engineering",
+    title: "Electrical and Electronic Engineering",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const NewsCategoryOthersScreen(title: "ইন্সটিটিউট of Engineering"));
+      Get.to(() => const NewsCategoryOthersScreen(title: "Electrical and Electronic Engineering"));
     },
   ),
   NewsCategoryOthers(
-    title: "ইন্সটিটিউট of Business Studies",
+    title: "Mathematics",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const NewsCategoryOthersScreen(title: "ইন্সটিটিউট of Business Studies"));
+      Get.to(() => const NewsCategoryOthersScreen(title: "Mathematics"));
     },
   ),
   NewsCategoryOthers(
-    title: "ইন্সটিটিউট of Social Science",
+    title: "Fisheries",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const NewsCategoryOthersScreen(title: "ইন্সটিটিউট of Social Science"));
+      Get.to(() => const NewsCategoryOthersScreen(title: "Fisheries"));
     },
   ),
   NewsCategoryOthers(
-    title: "ইন্সটিটিউট of Agriculture and Life Science",
+    title: "Geology",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const NewsCategoryOthersScreen(title: "ইন্সটিটিউট of Agriculture and Life Science"));
+      Get.to(() => const NewsCategoryOthersScreen(title: "Geology"));
     },
   ),
   NewsCategoryOthers(
-    title: "ইন্সটিটিউট of Earth Science",
+    title: "Management",
     imagePath: Images.calendarIc,
     onTap: () {
-      Get.to(() => const NewsCategoryOthersScreen(title: "ইন্সটিটিউট of Earth Science"));
+      Get.to(() => const NewsCategoryOthersScreen(title: "Management"));
+    },
+  ),
+  NewsCategoryOthers(
+    title: "Social Work",
+    imagePath: Images.calendarIc,
+    onTap: () {
+      Get.to(() => const NewsCategoryOthersScreen(title: "Social Work"));
     },
   ),
 ];
