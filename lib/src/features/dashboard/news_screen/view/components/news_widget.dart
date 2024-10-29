@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:bsfmstu_design/src/global/widget/global_sized_box.dart';
 import '../../../../../global/constants/colors_resources.dart';
+import '../../../../../global/constants/enum.dart';
 import '../../../../../global/widget/global_container.dart';
+import '../../../../../global/widget/global_image_loader.dart';
 import '../../../../../global/widget/global_text.dart';
 
 class NewsWidget extends StatelessWidget {
@@ -31,6 +33,18 @@ class NewsWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            // SizedBox(
+            //   width: Get.width,
+            //   height: 190,
+            //   child: GlobalImageLoader(
+            //     imagePath: imagePath,
+            //     height: Get.width,
+            //     width: Get.height,
+            //     fit: BoxFit.cover,
+            //     color: ColorRes.red,
+            //     imageFor: ImageFor.asset,
+            //   ),
+            // ),
             SizedBox(
               width: Get.width,
               height: 190,
