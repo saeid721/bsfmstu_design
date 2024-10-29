@@ -1,0 +1,66 @@
+name: bsfmstu_design
+description: "A new Flutter project."
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^1.2.2
+  get: ^4.6.6 # State Management!
+  get_it: ^7.6.4 # locator
+  dio: ^5.5.0+1 # Network handling
+  shared_preferences: ^2.2.2 # Local Storage!
+
+  # Localization!
+  intl: ^0.19.0
+  #  app_links: ^6.3.2
+  share_plus: ^10.1.0
+  url_launcher: ^6.3.1
+  image_picker: ^1.0.4
+  table_calendar: ^3.0.8
+  flutter_hls_parser: ^2.0.1
+  flutter_localization: ^0.2.0
+  flutter_image_compress: ^2.1.0
+  flutter_html: ^3.0.0-beta.2
+  #  flutter_widget_from_html: ^0.15.2
+
+  # UI Helpers!
+  shimmer: ^3.0.0
+  carousel_slider: ^5.0.0
+
+  # Font Style!
+  google_fonts: ^6.2.1
+  html: ^0.15.4
+
+  # Utilities!
+  device_info_plus: ^10.1.2
+  connectivity_plus: ^6.0.5
+  permission_handler: ^11.3.1
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/l10n/
+    - assets/app_src/
+    - assets/dummy_img/
+    - assets/app_src/icon/
+    - assets/app_src/icon/social_ic/
+    - assets/app_src/icon/social_ic/facebook.png
+    - assets/app_src/icon/social_ic/twitter.png
+    - assets/app_src/icon/social_ic/instagram.png
+    - assets/app_src/icon/social_ic/linkedin.png
+    - assets/app_src/icon/social_ic/whatsapp.png

@@ -1,0 +1,63 @@
+import 'package:flutter/material.dart';
+import '../../../../../../global/constants/colors_resources.dart';
+import '../../../../../../global/constants/enum.dart';
+import '../../../../../../global/widget/global_container.dart';
+import '../../../../../../global/widget/global_image_loader.dart';
+import '../../../../../../global/widget/global_sized_box.dart';
+import '../../../../../../global/widget/global_text.dart';
+
+class DirectoryCategoryWidget extends StatelessWidget {
+  final String imagePath;
+  final String title;
+  final Color? imageColor;
+  final Function() onTap;
+
+  const DirectoryCategoryWidget({
+    super.key,
+    required this.imagePath,
+    required this.title,
+    this.imageColor,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 8),
+        child: GlobalContainer(
+          height: 100,
+          margin: const EdgeInsets.symmetric(horizontal: 5),
+          borderRadiusCircular: 10,
+          borderColor: ColorRes.borderColor,
+          elevation: 2,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                child: GlobalImageLoader(
+                  imagePath: imagePath,
+                  height: 60,
+                  width: 60,
+                  fit: BoxFit.fill,
+                  color: ColorRes.red,
+                  imageFor: ImageFor.asset,
+                ),
+              ),
+              sizedBoxH(5),
+              GlobalText(
+                str: title,
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+                color: ColorRes.primaryColor,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
