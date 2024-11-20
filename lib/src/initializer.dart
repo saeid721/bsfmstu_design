@@ -5,12 +5,6 @@ import 'package:get_it/get_it.dart';
 import 'domain/local/preferences/local_storage.dart';
 import 'domain/local/preferences/storage_controller.dart';
 import 'domain/server/http_client/request_handler.dart';
-import 'features/dashboard/about_screen/controller/about_controller.dart';
-import 'features/dashboard/dashboard/controller/dashboard_controller.dart';
-import 'features/dashboard/directory_screen/department_screen/controller/directory_department_controller.dart';
-import 'features/dashboard/directory_screen/directory/controller/directory_controller.dart';
-import 'features/dashboard/directory_screen/office_screen/controller/directory_office_controller.dart';
-
 final locator = GetIt.instance;
 
 Future<void> init(LocalStorage localStorage) async {

@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:bsfmstu_design/src/global/widget/global_sized_box.dart';
 import '../../../../../global/constants/colors_resources.dart';
-import '../../../../../global/constants/enum.dart';
 import '../../../../../global/widget/global_container.dart';
-import '../../../../../global/widget/global_image_loader.dart';
 import '../../../../../global/widget/global_text.dart';
 
 class NewsWidget extends StatelessWidget {

@@ -11,7 +11,7 @@ import '../dashboard/calendar_screen/view/calender_screen.dart';
 import '../dashboard/dashboard/view/dashboard_screen.dart';
 import '../dashboard/directory_screen/directory/view/directory_screen.dart';
 import '../dashboard/events_screen/view/events_screen.dart';
-import '../dashboard/news_screen/view/news_screen.dart';
+import '../dashboard/news_screen/view/news_tab_screen.dart';
 import '../dashboard/notice_screen/view/notice_screen.dart';
 import '../dashboard/transport_screen/view/transport_screen.dart';
 import '../dashboard/videos_screen/view/videos_screen.dart';
@@ -34,7 +34,8 @@ class _CustomDrawerState extends State<CustomDrawer> {
         children: [
           GlobalContainer(
             width: size(context).width,
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 60, bottom: 10),
+            padding:
+                const EdgeInsets.only(left: 20, right: 20, top: 60, bottom: 10),
             color: ColorRes.white,
             child: const Center(
               child: GlobalImageLoader(
@@ -51,7 +52,8 @@ class _CustomDrawerState extends State<CustomDrawer> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CustomListTile(
-                    leading: const Icon(Icons.home_outlined, color: ColorRes.red),
+                    leading:
+                        const Icon(Icons.home_outlined, color: ColorRes.red),
                     title: "Home",
                     onTap: () {
                       Get.to(() => const DashboardScreen());
@@ -63,43 +65,50 @@ class _CustomDrawerState extends State<CustomDrawer> {
                       Get.to(() => const DirectoryScreen());
                     }),
                 CustomListTile(
-                    leading: const Icon(Icons.calendar_month_rounded, color: ColorRes.red),
+                    leading: const Icon(Icons.calendar_month_rounded,
+                        color: ColorRes.red),
                     title: "SAU Calendar",
                     onTap: () {
                       Get.to(() => const CalendarScreen());
                     }),
                 CustomListTile(
-                    leading: const Icon(Icons.newspaper_outlined, color: ColorRes.red),
+                    leading: const Icon(Icons.newspaper_outlined,
+                        color: ColorRes.red),
                     title: "SAU News",
                     onTap: () {
-                      Get.to(() => const NewsScreen());
+                      Get.to(() => const NewsTabScreen());
                     }),
                 CustomListTile(
-                    leading: const Icon(Icons.notifications_none_outlined, color: ColorRes.red),
+                    leading: const Icon(Icons.notifications_none_outlined,
+                        color: ColorRes.red),
                     title: "SAU Notice",
                     onTap: () {
                       Get.to(() => const NoticeScreen());
                     }),
                 CustomListTile(
-                    leading: const Icon(Icons.event_available, color: ColorRes.red),
+                    leading:
+                        const Icon(Icons.event_available, color: ColorRes.red),
                     title: "SAU Events",
                     onTap: () {
                       Get.to(() => const EventsScreen());
                     }),
                 CustomListTile(
-                    leading: const Icon(Icons.video_camera_back_rounded, color: ColorRes.red),
+                    leading: const Icon(Icons.video_camera_back_rounded,
+                        color: ColorRes.red),
                     title: "SAU Videos",
                     onTap: () {
                       Get.to(() => const VideosScreen());
                     }),
                 CustomListTile(
-                    leading: const Icon(Icons.directions_bus, color: ColorRes.red),
+                    leading:
+                        const Icon(Icons.directions_bus, color: ColorRes.red),
                     title: "SAU Transport",
                     onTap: () {
                       Get.to(() => const TransportScreen());
                     }),
                 CustomListTile(
-                    leading: const Icon(Icons.info_outline, color: ColorRes.red),
+                    leading:
+                        const Icon(Icons.info_outline, color: ColorRes.red),
                     title: "About",
                     onTap: () {
                       Get.to(() => const AboutScreen());

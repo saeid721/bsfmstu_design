@@ -5,7 +5,6 @@ import 'package:share_plus/share_plus.dart';
 import '../../../../../global/constants/colors_resources.dart';
 import '../../../../../global/widget/global_container.dart';
 import '../../../../../global/widget/global_text.dart';
-import '../news_screen.dart';
 
 class NewsDetailsWidget extends StatefulWidget {
   final String imagePath;
@@ -28,11 +27,26 @@ class _NewsDetailsWidgetState extends State<NewsDetailsWidget> {
   bool _showShareOptions = false;
 
   final List<Map<String, String>> _socialMedia = [
-    {'icon': 'assets/app_src/icon/social_ic/facebook.png', 'platform': 'Facebook'},
-    {'icon': 'assets/app_src/icon/social_ic/twitter.png', 'platform': 'Twitter'},
-    {'icon': 'assets/app_src/icon/social_ic/instagram.png', 'platform': 'Instagram'},
-    {'icon': 'assets/app_src/icon/social_ic/linkedin.png', 'platform': 'LinkedIn'},
-    {'icon': 'assets/app_src/icon/social_ic/whatsapp.png', 'platform': 'WhatsApp'},
+    {
+      'icon': 'assets/app_src/icon/social_ic/facebook.png',
+      'platform': 'Facebook'
+    },
+    {
+      'icon': 'assets/app_src/icon/social_ic/twitter.png',
+      'platform': 'Twitter'
+    },
+    {
+      'icon': 'assets/app_src/icon/social_ic/instagram.png',
+      'platform': 'Instagram'
+    },
+    {
+      'icon': 'assets/app_src/icon/social_ic/linkedin.png',
+      'platform': 'LinkedIn'
+    },
+    {
+      'icon': 'assets/app_src/icon/social_ic/whatsapp.png',
+      'platform': 'WhatsApp'
+    },
   ];
 
   void _shareToSocialMedia(String platform) {
@@ -66,19 +80,19 @@ class _NewsDetailsWidgetState extends State<NewsDetailsWidget> {
             height: 190,
             child: widget.imagePath.isNotEmpty
                 ? Image.network(
-              widget.imagePath,
-              fit: BoxFit.cover,
-              errorBuilder: (context, error, stackTrace) {
-                return Image.asset(
-                  'assets/dummy_img/03.jpg',
-                  fit: BoxFit.cover,
-                );
-              },
-            )
+                    widget.imagePath,
+                    fit: BoxFit.cover,
+                    errorBuilder: (context, error, stackTrace) {
+                      return Image.asset(
+                        'assets/dummy_img/03.jpg',
+                        fit: BoxFit.cover,
+                      );
+                    },
+                  )
                 : Image.asset(
-              'assets/app_src/place_holder_img.jpg',
-              fit: BoxFit.cover,
-            ),
+                    'assets/app_src/place_holder_img.jpg',
+                    fit: BoxFit.cover,
+                  ),
           ),
           sizedBoxH(10),
           GlobalText(
@@ -94,7 +108,7 @@ class _NewsDetailsWidgetState extends State<NewsDetailsWidget> {
             children: [
               InkWell(
                 onTap: () {
-                  Get.to(() => const NewsScreen());
+                  Get.back();
                 },
                 child: const GlobalContainer(
                   padding: EdgeInsets.all(5),

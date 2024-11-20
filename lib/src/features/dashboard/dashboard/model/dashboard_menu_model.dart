@@ -3,7 +3,7 @@ import '../../../../global/constants/images.dart';
 import '../../calendar_screen/view/calender_screen.dart';
 import '../../directory_screen/directory/view/directory_screen.dart';
 import '../../events_screen/view/events_screen.dart';
-import '../../news_screen/view/news_screen.dart';
+import '../../news_screen/view/news_tab_screen.dart';
 import '../../notice_screen/view/notice_screen.dart';
 import '../../transport_screen/view/transport_screen.dart';
 import '../../videos_screen/view/videos_screen.dart';
@@ -41,7 +41,7 @@ final List<DashboardItem> dashboardItems = [
     title: "News",
     imagePath: Images.newspaperIc,
     onTap: () {
-      Get.to(() => const NewsScreen());
+      Get.to(() => const NewsTabScreen());
     },
   ),
   DashboardItem(

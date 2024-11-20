@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import '../../global/constants/input_decoration.dart';
 import '../../global/widget/global_appbar.dart';
 import '../../global/widget/global_bottom_widget.dart';

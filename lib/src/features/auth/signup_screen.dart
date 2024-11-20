@@ -1,7 +1,6 @@
 
 import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../global/constants/input_decoration.dart';
 import '../../global/widget/global_appbar.dart';

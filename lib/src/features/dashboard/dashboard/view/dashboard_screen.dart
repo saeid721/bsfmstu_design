@@ -7,8 +7,7 @@ import '../../../../global/widget/global_sized_box.dart';
 import '../../../../global/widget/global_text.dart';
 import '../../../drawer/custom_drawer.dart';
 import '../../about_screen/view/about_screen.dart';
-import '../model/dashboar_menu_model.dart';
-import 'components/carousel_slider_widget.dart';
+import '../model/dashboard_menu_model.dart';
 import 'components/dashboard_item_widget.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -21,8 +20,17 @@ class DashboardScreen extends StatefulWidget {
 class _DashboardScreenState extends State<DashboardScreen> {
   final GlobalKey<ScaffoldState> drawerKey = GlobalKey<ScaffoldState>();
 
+  int currentIndex = 0;
   CarouselSliderController buttonCarouselController = CarouselSliderController();
 
+  final List<String> sliderImage = [
+    'assets/dummy_img/sfmuj_cover.jpeg',
+    'assets/dummy_img/02.jpg',
+    'assets/dummy_img/01.jpg',
+    'assets/dummy_img/03.jpg',
+    'assets/dummy_img/04.jpg',
+    'assets/dummy_img/05.jpg',
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,8 +76,61 @@ class _DashboardScreenState extends State<DashboardScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: buildCarouselSlider(),
+              child: Column(
+                children: [
+                  CarouselSlider(
+                    items: sliderImage
+                        .map(
+                          (item) => GlobalContainer(
+                        color: ColorRes.white,
+                        borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+                        margin: const EdgeInsets.all(5.0),
+                        child: ClipRRect(
+                          borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+                          child: Image.asset(
+                            item,
+                            fit: BoxFit.cover,
+                            width: MediaQuery.of(context).size.width,
+                          ),
+                        ),
+                      ),
+                    )
+                        .toList(),
+                    carouselController: buttonCarouselController,
+                    options: CarouselOptions(
+                      scrollPhysics: const BouncingScrollPhysics(),
+                      autoPlay: true,
+                      aspectRatio: 2,
+                      viewportFraction: 1,
+                      onPageChanged: (index, reason) {
+                        setState(() {
+                          currentIndex = index;
+                        });
+                      },
+                    ),
+                  ),
+                  const SizedBox(height: 5),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: sliderImage.asMap().entries.map((entry) {
+                      return AnimatedContainer(
+                        duration: const Duration(milliseconds: 300),
+                        height: 7,
+                        width: currentIndex == entry.key ? 15 : 7,
+                        margin: const EdgeInsets.symmetric(horizontal: 3),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: currentIndex == entry.key
+                              ? ColorRes.primaryColor
+                              : ColorRes.grey,
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                ],
+              ),
             ),
+
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: GridView.builder(
